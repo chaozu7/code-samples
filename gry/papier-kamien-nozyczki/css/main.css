@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-size:10px;
+}
+
+body {
+  background-color: #fff;
+  font-size: 1.5rem;
+}
+
+.container {
+  width: 80%;
+  background-color: #f39c12;
+  margin: 5rem auto;
+  border-radius: 2px;
+  border:4px solid #e67e22;
+  box-shadow:3px 3px 3px #e67e22;
+}
+
+.intro {
+  width: 100%;
+  height: auto;
+}
+.intro__heading{
+  text-align: center;
+  font-size: 2.5rem;
+}
+.hero__image{
+  border:2px solid #e67e22;
+}
+#js-newGameElement button {
+  border-radius: 5px;
+  border: 3px solid #1abc9c;
+  background: #16a085;
+  color: #2c3e50;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+#js-resultsTableElement {
+  background: #ff8080;
+}
+
+#js-playerPickElement .btn {
+  padding: 5px;
+}
+
+.hero p {
+  color: black;
+  font-size: 15px;
+  float: right;
+  margin-top: 260px;
+  background: #ffb3b3;
+  opacity: .7;
+}
+/*# sourceMappingURL=main.css.map */

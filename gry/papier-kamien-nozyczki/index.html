@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css">
+  <title>Kamień - Papier - Nożyce</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="intro">
+      <h3 class="intro__heading">
+        Witaj w grze
+        <span class="label label-default">Kamień</span>
+        <span class="label label-info">Papier</span>
+        <span class="label label-danger">Nożyce</span>
+      </h3>
+      <div class="hero">
+        <div class="hero__image">
+          <img src="images/pkn.jpg">
+        </div>
+        <div class="hero__text">
+          <p>
+            Gra składa się z kolejnych tur. W każdej turze obydwaj gracze, na umówiony sygnał, szybko wystawiają przed
+            siebie dłoń, pokazującą symbol papieru, kamienia lub nożyc. Gracz, który pokazał silniejszy symbol,
+            otrzymuje jeden punkt. W przypadku pokazania dwóch takich samych symboli następuje remis – punktu brak.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="game">
+      <div id="js-newGameElement" class="game__new">
+        <button id="js-newGameButton" class="btn btn-default">
+          Nowa Gra
+        </button>
+      </div>
+      <div class="game__pickArea">
+        <div id="js-playerPickElement" class="game__pick">
+          <button id="js-playerPick_rock" class="btn">
+            <span class="badge">
+              <i class="fa fa-hand-rock-o fa-4x" aria-hidden="true"></i>
+            </span>
+          </button>
+          <button id="js-playerPick_paper" class="btn">
+            <span class="badge">
+              <i class="fa fa-hand-paper-o fa-4x" aria-hidden="true"></i>
+            </span>
+          </button>
+          <button id="js-playerPick_scissors" class="btn">
+            <span class="badge">
+              <i class="fa fa-hand-scissors-o fa-4x" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="game__scoreArea" id="js-resultsTableElement">
+        <div class="game__score game__score--1">
+          <span id="js-playerPoints" class="badge">
+            0
+          </span>
+          <span id="js-playerName">
+            Imię gracza
+          </span>
+        </div>
+        <div class="game__scoreMiddle">
+          VS.
+        </div>
+        <div class="game__score game__score--2">
+          <span id="js-computerPoints" class="badge">
+            0
+          </span>
+          Komputer
+        </div>
+      </div>
+      <div class="game__moveArea">
+        <div class="game__move game__move--1">
+          <span id="js-playerPick">
+            Ruch gracza
+          </span>
+        </div>
+        <div class="game__moveMiddle">
+        </div>
+        <div class="game__move game__move--2">
+          <span id="js-computerPick">
+            Ruch komputera
+          </span>
+        </div>
+      </div>
+      <div class="game__resultArea">
+        <div class="game__result game__result--1">
+          <span id="js-playerResult">
+            Wynik gracza
+          </span>
+        </div>
+        <div class="game__resultMiddle">
+        </div>
+        <div class="game_-result game__result--2">
+          <span id="js-computerResult">
+            Wynik komputera
+          </span>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+
+</html>
