@@ -27,7 +27,18 @@ body {
   font-size: 2.5rem;
 }
 .hero__image{
+  margin: 0 auto;
   border:2px solid #e67e22;
+}
+
+.hero__image img {
+  width: 100%;
+}
+.game__pickArea,
+.game__scoreArea,
+.game__scoreArea,
+.game__moveArea {
+  display: flex;
 }
 #js-newGameElement button {
   border-radius: 5px;

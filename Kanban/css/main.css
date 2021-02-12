@@ -1,0 +1,91 @@
+#board {
+	background: #4400cc;
+}
+
+.column-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.column {
+	background: #ffffcc; 
+    width: 30%;
+    margin-bottom: 25px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+}
+
+.card p {
+    margin: 0;
+}
+
+.card button {
+    margin-right: 8px;
+}
+
+.navi {
+	height: 50px;
+	background: #000033;
+}
+
+.navi h1 {
+	color: #ffffcc;
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+.column-card-list {
+    min-height: 50px;
+}
+
+.card-placeholder {
+    height: 50px;
+    background:  #e6b800;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    border: 2px dotted #4d3d00;
+}
+
+.column-container .btn-delete {
+    background: #ffffcc;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 1px dotted black;
+}
+
+.column-container .add-card {
+    background-color: #0086b3;
+    border-radius: 20%;
+    color: #ffffe6;
+    padding: 5px;
+    margin: 8px;
+}
+
+.column-container .add-card:hover {
+    border: 1px solid #006080;
+}
+
+.board .btn {
+    margin: 8px;
+}
+
+.column-container .column-title {
+    height: 30px;
+    background: #000033;
+    color: #ffffcc;
+}
+
+.card {
+    box-shadow: 1px 1px 5px #000;
+    margin: 5px;
+    width: 75%;
+}
+
+.column-container li {
+    list-style-type: none;
+}
