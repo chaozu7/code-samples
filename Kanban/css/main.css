@@ -1,5 +1,13 @@
-#board {
-	background: #4400cc;
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Karla', sans-serif;
 }
 
 .column-container {
@@ -10,7 +18,10 @@
 }
 
 .column {
-	background: #ffffcc; 
+	background: #abbaab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
     width: 30%;
     margin-bottom: 25px;
 }
@@ -36,7 +47,8 @@
 .navi h1 {
 	color: #ffffcc;
 	font-size: 40px;
-	text-transform: uppercase;
+    text-transform: uppercase;
+    margin-left: 15px;
 }
 
 .column-card-list {
@@ -45,24 +57,26 @@
 
 .card-placeholder {
     height: 50px;
-    background:  #e6b800;
-    border-top-left-radius: 25%;
-    border-bottom-right-radius: 25%;
-    border: 2px dotted #4d3d00;
+    background:  #95a5a6;      
 }
 
 .column-container .btn-delete {
-    background: #ffffcc;
+    background: #858181;
     font-weight: bold;
-    border-radius: 50%;
-    border: 1px dotted black;
+    border-radius: 100px;
+    width:20px;
+    height: 20px;
+    line-height: 15px;
+    box-sizing: 1px 1px 2px #3e3e3e;
+    color: #ffffe6;
+    margin-left: 10px;
 }
 
 .column-container .add-card {
-    background-color: #0086b3;
-    border-radius: 20%;
+    background-color: #2c3e50;
+    border-radius: 5px;
     color: #ffffe6;
-    padding: 5px;
+    padding: 5px 10px;
     margin: 8px;
 }
 
@@ -78,14 +92,22 @@
     height: 30px;
     background: #000033;
     color: #ffffcc;
+    margin-left: 10px;
+
 }
 
 .card {
     box-shadow: 1px 1px 5px #000;
     margin: 5px;
     width: 75%;
+    min-height: 40px;
+    overflow-wrap: anywhere;
+    cursor: pointer;
 }
-
+.card p{
+    width: 75%;
+    padding: 2px;
+}
 .column-container li {
     list-style-type: none;
 }
