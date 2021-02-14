@@ -13,10 +13,9 @@
   <div class="container">
     <div class="intro">
       <h3 class="intro__heading">
-        Witaj w grze
-        <span class="label label-default">Kamień</span>
-        <span class="label label-info">Papier</span>
-        <span class="label label-danger">Nożyce</span>
+        <span class="intro__heading-span">Kamień</span>
+        <span class="intro__heading-span">Papier</span>
+        <span class="intro__heading-span">Nożyce</span>
       </h3>
       <div class="hero">
         <div class="hero__image">
@@ -37,7 +36,7 @@
           Nowa Gra
         </button>
       </div>
-      <div class="game__pickArea">
+      <div class="game__pickArea tree-column">
         <div id="js-playerPickElement" class="game__pick">
           <button id="js-playerPick_rock" class="btn">
             <span class="badge">
@@ -56,7 +55,7 @@
           </button>
         </div>
       </div>
-      <div class="game__scoreArea" id="js-resultsTableElement">
+      <div class="game__scoreArea tree-column" id="js-resultsTableElement">
         <div class="game__score game__score--1">
           <span id="js-playerPoints" class="badge">
             0
@@ -75,7 +74,7 @@
           Komputer
         </div>
       </div>
-      <div class="game__moveArea">
+      <div class="game__moveArea tree-column">
         <div class="game__move game__move--1">
           <span id="js-playerPick">
             Ruch gracza
@@ -89,7 +88,7 @@
           </span>
         </div>
       </div>
-      <div class="game__resultArea">
+      <div class="game__resultArea tree-column">
         <div class="game__result game__result--1">
           <span id="js-playerResult">
             Wynik gracza

@@ -1,14 +1,14 @@
 
-var newGameBtn = document.getElementById('js-newGameButton'); 
-newGameBtn.addEventListener('click', newGame); 
+var newGameBtn = document.getElementById('js-newGameButton');
+newGameBtn.addEventListener('click', newGame);
 
 var pickRock = document.getElementById('js-playerPick_rock'),
-     pickPaper = document.getElementById('js-playerPick_paper'),
-     pickScissors = document.getElementById('js-playerPick_scissors');
+    pickPaper = document.getElementById('js-playerPick_paper'),
+    pickScissors = document.getElementById('js-playerPick_scissors');
 
-pickRock.addEventListener('click', function() { playerPick('kamień') });
-pickPaper.addEventListener('click', function() { playerPick('papier') });
-pickScissors.addEventListener('click', function() { playerPick('nożyce') });
+pickRock.addEventListener('click', function () { playerPick('kamień') });
+pickPaper.addEventListener('click', function () { playerPick('papier') });
+pickScissors.addEventListener('click', function () { playerPick('nożyce') });
 
 var gameState = 'notStarted',
     player = {
@@ -35,25 +35,25 @@ var playerPickElem = document.getElementById('js-playerPick'),
 var maxPoints = 10;
 
 function setGameElements() {
-  switch(gameState) {
-    case 'started':
-        newGameElem.style.display = 'none';
-        pickElem.style.display = 'block';
-        resultsElem.style.display = 'block';
-      break;
-    case 'ended':
-        newGameBtn.innerText = 'Jeszcze raz';
-        playerPickElem.innerText = 'Ruch gracza';
-        computerPickElem.innerText = 'Ruch komputera';
-        playerResultElem.innerText = 'Wynik gracza';
-        computerResultElem.innerText = 'Wynik komputera';
-      
-    case 'notStarted':
-    default:
-        newGameElem.style.display = 'block';
-        pickElem.style.display = 'none';
-        resultsElem.style.display = 'none';
-  }
+    switch (gameState) {
+        case 'started':
+            newGameElem.style.display = 'none';
+            pickElem.style.display = 'flex';
+            resultsElem.style.display = 'flex';
+            break;
+        case 'ended':
+            newGameBtn.innerText = 'Jeszcze raz';
+            playerPickElem.innerText = 'Ruch gracza';
+            computerPickElem.innerText = 'Ruch komputera';
+            playerResultElem.innerText = 'Wynik gracza';
+            computerResultElem.innerText = 'Wynik komputera';
+
+        case 'notStarted':
+        default:
+            newGameElem.style.display = 'block';
+            pickElem.style.display = 'none';
+            resultsElem.style.display = 'none';
+    }
 }
 
 setGameElements();
@@ -61,37 +61,37 @@ setGameElements();
 
 
 function newGame() {
-  player.name = prompt('Graczu, wpisz swoje imię', 'imię gracza');
-  if (player.name) {
-    player.score = computer.score = 0;
-    gameState = 'started';
-    setGameElements();
+    player.name = prompt('Graczu, wpisz swoje imię', 'imię gracza');
+    if (player.name) {
+        player.score = computer.score = 0;
+        gameState = 'started';
+        setGameElements();
 
-    playerNameElem.innerHTML = player.name;
-    setGamePoints(); 
-  }
+        playerNameElem.innerHTML = player.name;
+        setGamePoints();
+    }
 
 }
 
 function getComputerPick() {
     var possiblePicks = ['kamień', 'papier', 'nożyce'];
-    return possiblePicks[Math.floor(Math.random()*3)];
+    return possiblePicks[Math.floor(Math.random() * 3)];
 }
 
 
 
 function checkRoundWinner(playerPick, computerPick) {
-  playerResultElem.innerHTML = computerResultElem.innerHTML = '';
+    playerResultElem.innerHTML = computerResultElem.innerHTML = '';
 
-  var winnerIs = 'player';
+    var winnerIs = 'player';
 
     if (playerPick == computerPick) {
-        winnerIs = 'noone'; 
+        winnerIs = 'noone';
     } else if (
-        (computerPick == 'kamień' &&  playerPick == 'nożyce') ||
-        (computerPick == 'nożyce' &&  playerPick == 'papier') ||
-        (computerPick == 'papier' &&  playerPick == 'kamień')) {
-        
+        (computerPick == 'kamień' && playerPick == 'nożyce') ||
+        (computerPick == 'nożyce' && playerPick == 'papier') ||
+        (computerPick == 'papier' && playerPick == 'kamień')) {
+
         winnerIs = 'computer';
     }
 
@@ -104,17 +104,17 @@ function checkRoundWinner(playerPick, computerPick) {
     } else {
         playerResultElem.innerHTML = computerResultElem.innerHTML = "Remis!";
     }
-    
+
     setGamePoints();
     endGame();
 }
 
 function playerPick(playerPick) {
     var computerPick = getComputerPick();
-    
+
     playerPickElem.innerHTML = playerPick;
     computerPickElem.innerHTML = computerPick;
-    
+
     checkRoundWinner(playerPick, computerPick);
 }
 
@@ -128,11 +128,11 @@ function endGame() {
         alert('Zwycięstwo!');
         gameState = 'ended';
         setGameElements();
-    } 
+    }
 
     if (computer.score == maxPoints) {
         alert('Przegrana!');
         gameState = 'ended';
         setGameElements();
-    } 
+    }
 }
