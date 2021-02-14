@@ -15,7 +15,7 @@
                     </p>
                 </div>
                 <div class="about-us__description-photo-box">
-                    <img class="about-us__description-photo" src="img/plusjusz_main.jpg" title="Plusjusz" alt="Plusjusz">
+                    <img class="about-us__description-photo" src="" title="" alt="">
                 </div>
             </div>
         </section>
