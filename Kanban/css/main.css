@@ -25,7 +25,9 @@ body{
     width: 30%;
     margin-bottom: 25px;
 }
-
+#new-board{
+    margin: 10px;
+}
 .card {
     display: flex;
     align-items: center;
@@ -44,7 +46,8 @@ body{
 	background: #000033;
 }
 
-.navi h1 {
+.navi h1, 
+.navi h2 {
 	color: #ffffcc;
 	font-size: 40px;
     text-transform: uppercase;
