@@ -1,0 +1,35 @@
+@import "../abstracts/mixins";
+.header {
+    height: 65vh;
+    background-image: linear-gradient(to bottom right, rgba(#fff, .25), rgba($color-primary, .5)), url('../img/webdev.jpg');
+    background-color: #000;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    position: relative;
+    clip-path: polygon(0 0, 100vw 0, 100vw 35vh, 60vw 65vh, 0 40vh);
+    @include respond(tab-port) {
+        clip-path: polygon(0 0, 100vw 0, 100vw 25vh, 70vw 45vh, 0 30vh);
+        height: 45vh;
+        background-position: left;
+        background-image: linear-gradient(to bottom right, rgba($color-secondary-lighten, .45), rgba($color-secondary, .5));
+    }
+}
+
+.header__logo-box {
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    .header__logo {
+        //    width: 50%;
+        @include respond(tab-port) {
+            width: 50%;
+        }
+    }
+}
+
+.header__info {
+    position: absolute;
+    @include centered;
+    text-align: center;
+}
