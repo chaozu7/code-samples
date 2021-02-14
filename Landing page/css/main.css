@@ -1,0 +1,70 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+@font-face {
+  font-family: 'Titillium';
+  src: url("/fonts/Titillium/Titillium-Black.otf");
+  /* IE9 Compat Modes */
+  src: url("/fonts/Titillium/Titillium-Black.ot?#iefix") format("embedded-opentype"), url("fonts/Titillium/Titillium-Black.otf"), url("fonts/Titillium/Titillium-Bold.otf"); }
+
+/* variables */
+/*mixin */
+/*extends */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 18px; }
+
+.navigation {
+  list-style: none;
+  float: left;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, max-content));
+  grid-template-rows: 100px;
+  position: fixed;
+  top: 0; }
+  .navigation img {
+    width: 70%; }
+  .navigation ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, min-content));
+    list-style-type: none; }
+    .navigation ul li {
+      padding: 0.3em;
+      font-size: 1.5rem; }
+      .navigation ul li:last-child {
+        margin: 0px; }
+      .navigation ul li a:link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #2C3A47; }
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr; }
+
+.btn-main:link {
+  text-align: center;
+  border-radius: 100px;
+  background-color: #3da8d9;
+  border: solid 1px darkblue;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #2C3A47;
+  width: 150px; }
+  .btn-main:link:hover {
+    background-color: #f15a29;
+    border: solid 1px #a9320b; }
+  .btn-main:linkvisited {
+    background-color: #bde1f2; }
+
+p {
+  margin: 50px; }
+
+footer {
+  position: fixed;
+  bottom: 0px; }
