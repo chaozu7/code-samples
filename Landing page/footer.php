@@ -1,8 +1,8 @@
 <footer class="footer">
         <div class="footer__logo-boxes">
-            <a class="footer__photo-link " href="https://www.internet-plus.pl/"><img class="footer__logo" src="img/iplus_logo_white.png" alt="Logo Internet Plus" title="Logo Internet Plus"></a>
-            <a class="footer__photo-link " href="#"><img class=" footer__logo" src="img/google_partner.png " alt="Google Partner Internet Plus " title="Google Partner Internet Plus "></a>
-            <a class="footer__photo-link " href="img/tuv-certyfikat.pdf "><img class="footer__logo" src="img/iso_cert.png " alt="certyfikat ISO " title="certyfikat ISO "></a>
+            <a class="footer__photo-link " href="#"><img class="footer__logo" src="" alt="Logo " title="Logo Internet Plus"></a>
+            <a class="footer__photo-link " href="#"><img class=" footer__logo" src=" " alt="" title="Google Partner "></a>
+            <a class="footer__photo-link " href="#"><img class="footer__logo" src="" alt="certyfikat ISO " title="certyfikat ISO "></a>
         </div>
         <div class="footer__navigation ">
             <ul class="footer__links ">
@@ -15,7 +15,7 @@
             </ul>
         </div>
         <div class="footer__copywrite ">
-            <p> <span id="year">&nbsp;</span> &copy; Copywrite by <a href="# " class="footer__link "> Internet Plus</a></p>
+            <p> <span id="year">&nbsp;</span> &copy; Copywrite by <a href="# " class="footer__link "> KN</a></p>
             <p>Photo by Ales Nesetril on Unsplash </p>
         </div>
     </footer>

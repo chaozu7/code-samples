@@ -29,14 +29,14 @@
                 <li class="navigation__item"><a href="#section__out-team" class="navigation__link" onclick="closeNav();">Zespół</a></li>
                 <li class=" navigation__item "><a href="#section__contact_us " class="navigation__link " onclick="closeNav();">Skontaktuj się</a>
                 </li>
-                <li class="navigation__item"><a href="https://www.internet-plus.pl/" class="navigation__link">Internet Plus</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Strona firmy</a></li>
 
             </ul>
         </nav>
     </div>
     <header class="header">
         <div class="header__logo-box">
-            <img class="header__logo" src="img/iplus_logo_white.png" alt="logo Internet Plus" title="logo Internet Plus">
+            <img class="header__logo" src="" alt="logo " title="logo">
         </div>
         <div class="header__info">
             <h1 class="heading-primary">
