@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Titillium';
+    src: url('../fonts/Titillium/Titillium-Black.otf');
+    /* IE9 Compat Modes */
+    src: url('../fonts/Titillium/Titillium-Black.ot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/Titillium/Titillium-Black.otf'), url('../fonts/Titillium/Titillium-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Lato';
+    @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+}
+
+body {
+    font-family: $primary-font, sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    box-sizing: border-box;
+    letter-spacing: 1.2;
+    font-size: 1.6rem;
+    color: $color-text;
+}
+
+.heading-primary {
+    color: $color-main-header;
+    backface-visibility: hidden;
+    &--main {
+        text-transform: uppercase;
+        letter-spacing: 1.5rem;
+        display: block;
+        font-size: 5rem;
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        //   animation-delay: 2s;
+        animation-timing-function: ease-out;
+        @include respond(phone) {
+            letter-spacing: 0.5rem;
+            font-size: 3rem;
+        }
+    }
+    &--sub {
+        display: block;
+        font-size: 2.2rem;
+        animation-name: moveInRight;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        @include respond(phone) {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+p {
+    font-family: $secondary-font;
+}
+
+.section__heading {
+    text-align: left;
+    transition: transform .3;
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    padding: 1rem;
+    margin-left: 4rem;
+    letter-spacing: .7rem;
+    transition: all .3s;
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
+    &:hover {
+        transform: rotate(3deg);
+        color: $color-headings;
+        letter-spacing: 0.5rem;
+    }
+}
+
+.offer__heading,
+.contact__heading {
+    display: inline-block;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #fff, $color-main-header);
+}
+
+.about-us__heading,
+.our-team__heading {
+    display: inline-block;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, $color-text, $color-text-lighten);
+}

@@ -1,0 +1,33 @@
+@import "abstracts/mixins";
+@import "abstracts/variables";
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+@import "components/buttons";
+@import "components/box";
+@import "components/form";
+@import "components/popup";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navigation";
+@import "pages/home";
+
+/*
+
+    grid-template-areas: "photo1 photo1 photo1 photo2
+                          photo3 photo4 photo5 photo2
+                          photo6 photo6 photo6 photo6" ;
+    justify-items: center;
+    align-items: center /stretch / end / start;
+    grid-auto-rows: 200px; //dodatkowe elementy
+    grid-auto-flow: row dense;
+
+    grid-template-columns: max-content 1fr 1fr min-content;
+    grid-template-columns: repeat(2, minmax(150px, min-content));
+    grid-template-columns: minmax(200px 300px) repeat(3, 1fr);
+
+    // autofill
+    grid-template-rows: repeat(2, 150px);
+    grid-template-columns: repeat(auto-fill/auto-fit, minmax(100px, 1fr); fill //- dzieli po równo przestrzeń; fit - zostawia pustą przestrzeń
+    */
